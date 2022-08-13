@@ -1,7 +1,7 @@
 
 describe('Drag And Drop', function () {
     before(function () {
-        cy.visit('drag_and_drop')
+        cy.visit('/drag_and_drop')
     })
 
     it('deve arrastar o cypress para a caixinha do node', function () {
