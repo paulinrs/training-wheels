@@ -4,10 +4,12 @@ it('selecionar nascimento do meu filho', function(){
     cy.visit('/datepicker')
 
     const date = {
-        month: 'Sep',
+        month: 'set',
         year: '2016',
-        day: /^5$/
+        day: 5
     }
+
+    new RegExp('^' + date.day + '$', 'g')
 
 
     cy.get('.datetimepicker-dummy-input').click()
@@ -18,6 +20,6 @@ it('selecionar nascimento do meu filho', function(){
     cy.get('.datepicker-nav-year').click()
     cy.contains('.datepicker-year', date.year).click()
     
-    cy.contains('button[class=date-item]', date.day).click()
+    cy.contains('button[class=date-item]', new RegExp('^' + date.day + '$', 'g')).click()
 
 })
