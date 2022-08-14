@@ -18,6 +18,6 @@ it('selecionar nascimento do meu filho', function(){
     cy.get('.datepicker-nav-year').click()
     cy.contains('.datepicker-year', date.year).click()
     
-    cy.contains('button[class=date-item]', date.day)
+    cy.contains('button[class=date-item]', date.day).click()
 
 })
