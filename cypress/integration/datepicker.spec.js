@@ -5,6 +5,7 @@ it('selecionar nascimento do meu filho', function(){
 
     const date = {
         month: 'Sep',
+        //usar m~es em inglês
         year: '2016',
         day: 5
     }
