@@ -4,9 +4,9 @@ it('selecionar nascimento do meu filho', function(){
     cy.visit('/datepicker')
 
     const date = {
-        month: 'set',
+        month: 'Sep', //quando for rodar na maquina colocar (set)
         year: '2016',
-        day: '5'
+        day: /^5$/g
     }
 
 
@@ -18,6 +18,6 @@ it('selecionar nascimento do meu filho', function(){
     cy.get('.datepicker-nav-year').click()
     cy.contains('.datepicker-year', date.year).click()
     
-    cy.contains('button[class=date-item]', date.day).click()
+    cy.contains('button[class=date-item]', date.day)
 
 })
