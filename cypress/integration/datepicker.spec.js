@@ -6,7 +6,7 @@ it('selecionar nascimento do meu filho', function(){
     const date = {
         month: 'Sep',
         year: '2016',
-        day: '5'
+        day: /^5$/
     }
 
 
