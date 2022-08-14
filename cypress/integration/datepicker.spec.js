@@ -4,7 +4,9 @@ it('selecionar nascimento do meu filho', function(){
     cy.visit('/datepicker')
 
     const date = {
+<<<<<<< HEAD
         month: 'Sep',
+        month: 'Seb',
         year: '2016',
         day: 5
     }
