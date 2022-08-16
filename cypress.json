@@ -1,6 +1,7 @@
 {
     "projectId": "b8py3z",
-    "baseUrl": "https://training-wheels-qaninja.herokuapp.com"
+    "baseUrl": "https://training-wheels-qaninja.herokuapp.com",
+    "chromeWebSecurity": false
     
 }
 
