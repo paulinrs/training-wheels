@@ -12,6 +12,6 @@ it('nova guia', function(){
     cy.contains('a', 'Clique aqui').click()
 
 
-    cy.get('input[name=q]').type('Flamengo Campeão Libertadores 2019')
+    cy.get('input[name=q]').type('Mengão Campeão Libertadores 2019')
 
 })
